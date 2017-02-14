@@ -1,0 +1,37 @@
+---
+title: Colors
+category: colors
+perlink: /hi/
+layout: default
+---
+<style>
+    .colors {
+        text-align: center;
+        display: flex;
+            flex-wrap: wrap;
+    }
+    .colors figure {
+        flex: 1 1 200px;
+    }
+.swatch {
+    width: 50%;
+    height: 100px;
+border-radius: 25%;
+    margin: auto 25%;
+    border: 2px black solid;
+    }
+    
+    figcaption {
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 5px;
+    }
+</style>
+<h2>Colors</h2>
+<div class="colors">
+{% for c in site.data.colors %}
+ <figure>
+     <div class="swatch" style="background-color: {{c.color}};"></div><figcaption style="color: {{c.color}};">{{c.name}}<br>{{c.color}}</figcaption>
+    </figure>
+{% endfor %}
+</div>

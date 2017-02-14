@@ -1,0 +1,12 @@
+- name: NewTek Blue
+  color: rgba(6, 142 , 214, 1)
+- name: NewTek Black
+  color: rgba(0, 0, 0, 1)
+- name: NewTek Grey
+  color: rgba(65, 67, 80, 1)
+- name: White
+  color: rgba(255, 255, 255, 1)
+- name: Light Grey
+  color: rgba(183, 209, 227, 1)
+- name: Orange
+  color: rgba(245, 126, 32, 1)
