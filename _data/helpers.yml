@@ -1,0 +1,35 @@
+- name: .fluff
+  desc: 'Hide at element at small screen widths'
+  html: '<br class="fluff">'
+  css: >
+    @media screen and (max-width: 768px) {
+       .fluff {display: none;}
+    }
+- name: .centered-content
+  desc: 'Center stuff'
+  html: '<div class="centered-content">'
+  css: >
+    .centered-content {
+       text-align: center;
+       max-width: 800px;
+       margin-right: auto;
+       margin-bottom: 40px;
+       margin-left: auto;
+    }
+- name: .padding-bleed
+  desc: 'Make element full width of container'
+  html: '<div class="padding-bleed">'
+  css: >
+    .buckets-medium .bucket .padding-bleed,
+      .buckets-medium .bucket .bg-bleed {
+         margin-right: -30px !important;
+         margin-left: -30px !important;
+    }
+- name: .clearfix
+  desc: 'Clears floats'
+  html: '<div class="clearfix">'
+  css: >
+     .clearfix {
+        clear: both;
+     }
+     

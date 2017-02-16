@@ -1,23 +1,25 @@
 ---
 title: Colors
 category: colors
-perlink: /hi/
 layout: default
+order: 2
 ---
 <style>
     .colors {
         text-align: center;
         display: flex;
             flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
     }
     .colors figure {
-        flex: 1 1 200px;
+        flex: 0 1 200px;
     }
 .swatch {
-    width: 50%;
+    width: 100px;
     height: 100px;
-border-radius: 25%;
-    margin: auto 25%;
+border-radius: 5px;
+    margin: auto 50px;
     border: 2px black solid;
     }
     
@@ -25,13 +27,20 @@ border-radius: 25%;
         font-weight: bold;
         font-size: 1.2em;
         padding: 5px;
+        margin: 10px auto 20px auto;
+    }
+    
+    .white-text {
+        background-color: rgba(0,0,0,0.2);
+        border-radius: 5px;
     }
 </style>
 <h2>Colors</h2>
 <div class="colors">
 {% for c in site.data.colors %}
  <figure>
-     <div class="swatch" style="background-color: {{c.color}};"></div><figcaption style="color: {{c.color}};">{{c.name}}<br>{{c.color}}</figcaption>
+     <div class="swatch" style="background-color: {{c.color}};"></div>
+     <figcaption style="color: {{c.color}};" {%if c.name contains 'White' %}class="white-text"{% endif %}>{{c.name}}<br>{{c.color}}</figcaption>
     </figure>
 {% endfor %}
 </div>

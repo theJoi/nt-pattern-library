@@ -1,0 +1,35 @@
+---
+title: Typography - Font Weights
+category: helpers
+layout: default
+order: 3
+---
+<style>
+   .typo {
+       font-size: 1.5em;
+    }
+    .caption {
+
+          color: rgba(6, 142 , 214, 1)
+    }
+
+</style>
+<div class="typo">
+<h2>{{page.title}}</h2>
+{% for x in (1..3) %}
+
+<p style='font-weight:{{ x | times:100 }};font-family:Helvetica-Thin;'>
+<span class="caption">Helvetica Thin Font Weight {{ x | times:100 }}</span><br>
+{% include alphabet.md %}
+{% include lorem.html type="short" %}
+</p>
+{% endfor %}
+{% for x in (4..9) %}
+
+<p style="font-weight:{{ x | times:100 }};">
+<span class="caption">Helvetica Font Weight {{ x | times:100 }}</span><br>
+{% include alphabet.md %}
+{% include lorem.html type="short" %}
+</p>
+{% endfor %}
+</div>

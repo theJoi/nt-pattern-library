@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Helvetica;
+    src: url('/assets/fonts/HelveticaNeueLTStd-Roman.otf');
+}
+
+@font-face {
+    font-family: Helvetica-Thin;
+    src: url('/assets/fonts/HelveticaNeueLTStd-Th.otf');
+}
+
+
+/* Overrides for dinky template */
+body {
+
+    font-family: 'Helvetica','Arial';
+}
+
+.wrapper {
+    width: 100%;
+}
+
+section {
+    width: auto;
+    max-width: 825px;
+}

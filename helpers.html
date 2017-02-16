@@ -1,0 +1,43 @@
+---
+title: Helper Classes
+category: helpers
+layout: default
+order: 3
+---
+<style>
+    .patterns {
+        display: flex;
+            flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .pattern {
+        flex: 1 1 300px;
+        background-color: rgba(183, 209, 227, 1);
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    .pattern .title {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .pattern .caption {
+        font-weight: bold;
+    }
+
+</style>
+{% assign patterns = site.data.helpers | sort: 'name' %}
+<h2>{{page.title}}</h2>
+<div class="patterns">
+{% for p in patterns %}
+ <div class="pattern">
+     <span class="title">{{p.name}}</span>
+     <p>{{p.desc}}</p>
+     <strong>HTML Example</strong>
+     {% highlight html %}{{p.html}}{% endhighlight %}
+     <strong>CSS for {{p.name}}</strong>
+     <pre><code class="css"></code>{{p.css}}</pre>
+    </div>
+{% endfor %}
+</div>
