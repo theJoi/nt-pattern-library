@@ -10,6 +10,10 @@
 
 
 /* Overrides for dinky template */
+
+* {
+    
+}
 body {
 
     font-family: 'Helvetica','Arial';
@@ -21,5 +25,7 @@ body {
 
 section {
     width: auto;
-    max-width: 825px;
+    max-width: calc(100vw - 300px);
+    padding: 0 10px;
+    box-sizing: border-box;
 }

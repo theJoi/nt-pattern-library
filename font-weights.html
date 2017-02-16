@@ -21,7 +21,7 @@ order: 3
 <p style='font-weight:{{ x | times:100 }};font-family:Helvetica-Thin;'>
 <span class="caption">Helvetica Thin Font Weight {{ x | times:100 }}</span><br>
 {% include alphabet.md %}
-{% include lorem.html type="short" %}
+{% include lorem.html length="medium" %}
 </p>
 {% endfor %}
 {% for x in (4..9) %}
@@ -29,7 +29,7 @@ order: 3
 <p style="font-weight:{{ x | times:100 }};">
 <span class="caption">Helvetica Font Weight {{ x | times:100 }}</span><br>
 {% include alphabet.md %}
-{% include lorem.html type="short" %}
+{% include lorem.html length="medium" %}
 </p>
 {% endfor %}
 </div>
