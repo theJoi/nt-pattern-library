@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Helvetica;
-    src: url({{'/assets/fonts/HelveticaNeueLTStd-Roman.otf' | relative_url }});
+    font-family: 'Helvetica';
+    src: url({{'/assets/fonts/HelveticaNeueLTStd-Roman.otf' | relative_url }}) format("opentype");
 }
 
 @font-face {
-    font-family: HelveticaThin;
-    src: url({{'/assets/fonts/HelveticaNeueLTStd-Th.otf' | relative_url }});
+    font-family: 'HelveticaThin';
+    src: url({{'/assets/fonts/HelveticaNeueLTStd-Th.otf' | relative_url }}) format("opentype");
 }
 
 

@@ -32,4 +32,11 @@
      .clearfix {
         clear: both;
      }
-     
+- name: .nowrap
+  desc: 'Prevents text wrapping'
+  html: 'Keep <span class="nowrap">no wrap</span> together.'
+  css: >
+     .nowrap {
+        white-space: nowrap;
+     }
+         
